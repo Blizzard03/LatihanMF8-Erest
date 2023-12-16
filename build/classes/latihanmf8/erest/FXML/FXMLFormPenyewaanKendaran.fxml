@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<TabPane fx:id="penyewaanKENDARAAN" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="latihanmf8.erest.Controller.FXMLFormPenyewaanKendaranController">
+  <tabs>
+    <Tab fx:id="penyewaan" text="Form Penyewaan">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="21.0" text="Nama" />
+                  <Label layoutX="14.0" layoutY="91.0" text="Jenis Kendaraan" />
+                  <TextField fx:id="txthari" layoutX="14.0" layoutY="49.0" />
+                  <CheckBox fx:id="pickup" layoutX="14.0" layoutY="125.0" mnemonicParsing="false" text="Pick up" />
+                  <CheckBox fx:id="sedan" layoutX="114.0" layoutY="125.0" mnemonicParsing="false" text="Sedan" />
+                  <CheckBox fx:id="minibus" layoutX="198.0" layoutY="125.0" mnemonicParsing="false" text="Mini Bus" />
+                  <Label layoutX="14.0" layoutY="162.0" text="Lama Sewa" />
+                  <TextField fx:id="txtnama" layoutX="14.0" layoutY="180.0" />
+                  <Label layoutX="174.0" layoutY="184.0" text="Hari" />
+                  <Label layoutX="14.0" layoutY="228.0" text="Perusahaan" />
+                  <CheckBox fx:id="yesPerusahaan" layoutX="14.0" layoutY="255.0" mnemonicParsing="false" text="Ya" />
+                  <CheckBox fx:id="noperusahaan" layoutX="90.0" layoutY="255.0" mnemonicParsing="false" text="Tidak" />
+                  <Separator layoutX="297.0" layoutY="14.0" orientation="VERTICAL" prefHeight="322.0" prefWidth="8.0" />
+                  <Button fx:id="pesanbrn" layoutX="311.0" layoutY="21.0" mnemonicParsing="false" onAction="#pesanklik" prefHeight="83.0" prefWidth="128.0" text="Pesan" />
+                  <Button fx:id="hapusbtn" layoutX="311.0" layoutY="121.0" mnemonicParsing="false" onAction="#hapusklik" prefHeight="83.0" prefWidth="128.0" text="Hapus" />
+                  <Button fx:id="keluarbtn" layoutX="311.0" layoutY="227.0" mnemonicParsing="false" onAction="#keluarklik" prefHeight="83.0" prefWidth="128.0" text="Keluar" />
+                  <Button fx:id="ubahharga" layoutX="458.0" layoutY="21.0" mnemonicParsing="false" onAction="#ubahhargaklik" prefHeight="83.0" prefWidth="128.0" text="Ubah Harga" />
+                  <Label layoutX="546.0" layoutY="331.0" text="Created by WPA TEAM">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab fx:id="pembaharuanharga" text="Form Pembaharuan Harga">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="547.0" layoutY="330.0" text="Created by WPA TEAM">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txt_tarif" layoutX="14.0" layoutY="44.0" />
+                  <Label layoutX="14.0" layoutY="21.0" text="Harga sewa" />
+                  <Label layoutX="19.0" layoutY="90.0" text="Harga Tarif" />
+                  <TextField fx:id="txt_sewa" layoutX="14.0" layoutY="117.0" />
+                  <Label layoutX="14.0" layoutY="244.0" text="Pilih Jenis Kendaraan yang akan di perbaharui Harga" />
+                  <CheckBox fx:id="pickupupdate" layoutX="216.0" layoutY="268.0" mnemonicParsing="false" text="Pick up" />
+                  <CheckBox fx:id="sedanupdate" layoutX="124.0" layoutY="268.0" mnemonicParsing="false" text="Sedan" />
+                  <CheckBox fx:id="minibusupdate" layoutX="22.0" layoutY="268.0" mnemonicParsing="false" text="Mini Bus" />
+                  <Separator layoutX="6.0" layoutY="232.0" prefHeight="0.0" prefWidth="594.0" />
+                  <Separator layoutX="191.0" layoutY="8.0" orientation="VERTICAL" prefHeight="226.0" prefWidth="6.0" />
+                  <Button fx:id="hapusupdbtn" layoutX="203.0" layoutY="14.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="114.0" text="Hapus" />
+                  <Button fx:id="pembaharuanbtn" layoutX="203.0" layoutY="117.0" mnemonicParsing="false" onAction="#pembaharuanklik" prefHeight="86.0" prefWidth="114.0" text="Pembaharui" />
+                  <Button fx:id="batalbtn" layoutX="433.0" layoutY="90.0" mnemonicParsing="false" onAction="#batalklik" prefHeight="86.0" prefWidth="114.0" text="Batal" />
+                  <Line endX="15.0" endY="89.0" layoutX="418.0" layoutY="44.0" startX="-100.0" />
+                  <Line endX="44.0" endY="-27.0" layoutX="389.0" layoutY="160.0" startX="-72.0" startY="14.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab fx:id="faktur" text="Faktur">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="545.0" layoutY="330.0" text="Created by WPA TEAM">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="28.0" style="-fx-cursor: default;" text="Nama" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="8.0" layoutY="66.0" style="-fx-cursor: default;" text="Kendaraan" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="104.0" style="-fx-cursor: default;" text="Harga Sewa" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="145.0" style="-fx-cursor: default;" text="Tarif" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="161.0" style="-fx-cursor: default;" text="------------------------------------------------------------------------------------- +" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="181.0" style="-fx-cursor: default;" text="Tarif Total" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="213.0" style="-fx-cursor: default;" text="Pajak" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="237.0" style="-fx-cursor: default;" text="------------------------------------------------------------------------------------- +" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="274.0" style="-fx-cursor: default;" text="Pembayaaran" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="94.0" layoutY="216.0" style="-fx-cursor: default;" text=":" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="114.0" layoutY="275.0" style="-fx-cursor: default;" text=":" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="97.0" layoutY="181.0" style="-fx-cursor: default;" text=":" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="101.0" layoutY="104.0" style="-fx-cursor: default;" text=":" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="95.0" layoutY="66.0" style="-fx-cursor: default;" text=":" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="99.0" layoutY="145.0" prefHeight="25.0" prefWidth="0.0" style="-fx-cursor: default;" text=":" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="95.0" layoutY="28.0" style="-fx-cursor: default;" text=":" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblname" layoutX="111.0" layoutY="28.0" style="-fx-cursor: default;" text="Label" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblvehicle" layoutX="111.0" layoutY="216.0" style="-fx-cursor: default;" text="Label" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="rateprice" layoutX="121.0" layoutY="145.0" style="-fx-cursor: default;" text="Label" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalratesprice" layoutX="358.0" layoutY="104.0" style="-fx-cursor: default;" text="Label" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tax" layoutX="111.0" layoutY="66.0" style="-fx-cursor: default;" text="Label" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Payments" layoutX="140.0" layoutY="274.0" style="-fx-cursor: default;" text="Label" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblrentsdays" layoutX="121.0" layoutY="104.0" style="-fx-cursor: default;" text="Label" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="217.0" layoutY="104.0" style="-fx-cursor: default;" text="X" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="rentprice" layoutX="253.0" layoutY="104.0" style="-fx-cursor: default;" text="Label" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="323.0" layoutY="104.0" style="-fx-cursor: default;" text="=" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalrentprice" layoutX="111.0" layoutY="182.0" style="-fx-cursor: default;" text="Label" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="518.0" layoutY="285.0" mnemonicParsing="false" text="Keluar" />
+                  <Button layoutX="435.0" layoutY="284.0" mnemonicParsing="false" text="Kembali" />
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>
