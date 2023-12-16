@@ -8,8 +8,8 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="LatihanMF8-Erest.jar" size="9668" download="eager" />
+    <jar href="LatihanMF8-Erest.jar" size="9694" download="eager" />
   </resources>
-  <jfx:javafx-desc  width="800" height="600" main-class="latihanmf8.erest.LatihanMF8Erest"  name="LatihanMF8-Erest" />
+  <jfx:javafx-desc  width="800" height="600" main-class="latihanmf8.erest.Main_Class.LatihanMF8Erest"  name="LatihanMF8-Erest" />
   <update check="always"/>
 </jnlp>

@@ -18,7 +18,7 @@ public class LatihanMF8Erest extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLSewaKendaraan.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/latihanmf8/erest/FXML/FXMLFormPenyewaanKendaran.fxml"));
         
         Scene scene = new Scene(root);
         
